@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<title>Alca W44 — Full-Stack Developer</title>
+<meta name="description" content="Portofolio Alca W44 — full-stack developer. Next.js, React, Express, REST API, bot WhatsApp, CLI tooling." />
+<meta name="author" content="Alca W44" />
+<meta name="theme-color" content="#0A0C10" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Alca W44 — Full-Stack Developer" />
+<meta property="og:description" content="Portofolio Alca W44 — full-stack developer. Next.js, React, Express, REST API, bot WhatsApp, CLI tooling." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">AW</span>
+      <span class="brand-name">alca.w44</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="sr-only">Buka navigasi</span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Navigasi utama">
+      <a href="#work">Proyek</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Kontak</a>
+      <a class="nav-cta" href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="mono-label">Full-stack developer — Jakarta, ID</p>
+      <h1>Bangun, uji, lalu deploy. Satu alur, tanpa tangan kedua.</h1>
+      <p class="lede">
+        Saya menangani produk web dari sisi klien sampai server: antarmuka React, REST API Express,
+        bot WhatsApp, sampai pipeline deploy. Fokus pada kode yang bisa dibaca orang lain enam bulan lagi.
+      </p>
+
+      <div class="hero-meta mono">
+        <span class="meta-item"><span class="dot dot-live"></span> Open untuk proyek</span>
+        <span class="meta-item">Node 20.x</span>
+        <span class="meta-item">TypeScript</span>
+        <span class="meta-item">respon &lt; 24 jam</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">Lihat proyek</a>
+        <button class="btn btn-ghost" type="button" id="copy-email" data-email="alca.w44@gmail.com">
+          <span class="btn-label">alca.w44@gmail.com</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Proyek</h2>
+        <p class="section-note mono">04 entri</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter proyek">
+        <button class="chip is-active" type="button" data-filter="all">Semua</button>
+        <button class="chip" type="button" data-filter="web">Web</button>
+        <button class="chip" type="button" data-filter="api">API</button>
+        <button class="chip" type="button" data-filter="bot">Bot</button>
+        <button class="chip" type="button" data-filter="tool">Tooling</button>
+      </div>
+
+      <ul class="work-list" id="work-list">
+        <li class="work-item reveal" data-tags="web api">
+          <div class="work-top">
+            <span class="work-index mono">01</span>
+            <span class="work-year mono">2025</span>
+          </div>
+          <h3>obsidian-ui-kit</h3>
+          <p>Komponen React + Tailwind v4 untuk dashboard internal. Token warna, tabel data, dan form state yang konsisten antar halaman.</p>
+          <ul class="tag-list">
+            <li>React</li>
+            <li>Tailwind v4</li>
+            <li>Vite</li>
+          </ul>
+          <a class="work-link mono" href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">lihat repo →</a>
+        </li>
+
+        <li class="work-item reveal" data-tags="api">
+          <div class="work-top">
+            <span class="work-index mono">02</span>
+            <span class="work-year mono">2025</span>
+          </div>
+          <h3>edge-rest-api</h3>
+          <p>REST API Express dengan auth JWT, rate limit per IP, validasi skema Zod, dan migrasi Postgres yang bisa di-rollback.</p>
+          <ul class="tag-list">
+            <li>Express</li>
+            <li>Postgres</li>
+            <li>Zod</li>
+          </ul>
+          <a class="work-link mono" href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">lihat repo →</a>
+        </li>
+
+        <li class="work-item reveal" data-tags="bot">
+          <div class="work-top">
+            <span class="work-index mono">03</span>
+            <span class="work-year mono">2024</span>
+          </div>
+          <h3>wa-bot-gateway</h3>
+          <p>Gateway bot WhatsApp multi-sesi: penjadwal pesan, perintah berbasis plugin, dan log pengiriman yang bisa diaudit.</p>
+          <ul class="tag-list">
+            <li>Node.js</li>
+            <li>Baileys</li>
+            <li>Redis</li>
+          </ul>
+          <a class="work-link mono" href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">lihat repo →</a>
+        </li>
+
+        <li class="work-item reveal" data-tags="tool web">
+          <div class="work-top">
+            <span class="work-index mono">04</span>
+            <span class="work-year mono">2024</span>
+          </div>
+          <h3>cli-scaffold</h3>
+          <p>Generator proyek lewat terminal: pilih stack, langsung dapat struktur folder, env contoh, dan skrip build yang jalan.</p>
+          <ul class="tag-list">
+            <li>TypeScript</li>
+            <li>Commander</li>
+            <li>npm publish</li>
+          </ul>
+          <a class="work-link mono" href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">lihat repo →</a>
+        </li>
+      </ul>
+      <p class="empty-state mono" id="empty-state" hidden>Tidak ada proyek pada kategori ini.</p>
+    </div>
+  </section>
+
+  <section class="section" id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Stack</h2>
+        <p class="section-note mono">yang saya pakai harian</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="panel">
+          <h3 class="panel-title mono">Frontend</h3>
+          <ul class="plain-list">
+            <li>Next.js / React</li>
+            <li>Tailwind CSS v4</li>
+            <li>TypeScript</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3 class="panel-title mono">Backend</h3>
+          <ul class="plain-list">
+            <li>Node.js / Express</li>
+            <li>REST API &amp; webhook</li>
+            <li>Postgres / SQLite</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3 class="panel-title mono">Ops &amp; Tooling</h3>
+          <ul class="plain-list">
+            <li>Git &amp; GitHub Actions</li>
+            <li>Vercel / VPS</li>
+            <li>Docker Compose</li>
+            <li>Linux, CLI, bash</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Kontak</h2>
+        <p class="section-note mono">pilih jalur tercepat</p>
+      </div>
+
+      <div class="panel contact-panel">
+        <p class="contact-copy">
+          Kirim brief singkat: kebutuhan, tenggat, dan sistem yang sudah ada. Saya balas dengan estimasi
+          dan pertanyaan teknis yang perlu dijawab sebelum mulai.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://whatsapp.com/channel/0029Vb82nkLEwEjtLSQ49I44" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
+          <button class="btn btn-ghost" type="button" id="copy-email-2" data-email="alca.w44@gmail.com">
+            <span class="btn-label">alca.w44@gmail.com</span>
+          </button>
+        </div>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-key mono">GitHub</span>
+            <a href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">github.com/AlcaNewbie</a>
+          </li>
+          <li>
+            <span class="contact-key mono">Instagram</span>
+            <a href="https://instagram.com/w.hidzy" target="_blank" rel="noopener noreferrer">@w.hidzy</a>
+          </li>
+          <li>
+            <span class="contact-key mono">TikTok</span>
+            <a href="https://tiktok.com/@w.hizz" target="_blank" rel="noopener noreferrer">@w.hizz</a>
+          </li>
+          <li>
+            <span class="contact-key mono">WhatsApp</span>
+            <a href="https://whatsapp.com/channel/0029Vb82nkLEwEjtLSQ49I44" target="_blank" rel="noopener noreferrer">Saluran resmi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-credit">
+      Dibuat oleh <strong>Alca W44</strong> · <span class="mono" id="year">2025</span>
+    </p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/AlcaNewbie" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://instagram.com/w.hidzy" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://tiktok.com/@w.hizz" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+      <li><a href="https://whatsapp.com/channel/0029Vb82nkLEwEjtLSQ49I44" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
